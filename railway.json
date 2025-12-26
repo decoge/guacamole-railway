@@ -1,7 +1,8 @@
 {
-  "$schema": "https://railway.app/railway.schema.json",
+  "$schema": "https://railway.com/railway.schema.json",
   "build": {
-    "dockerfile": "docker/guacamole/Dockerfile"
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "docker/guacamole/Dockerfile"
   },
   "deploy": {
     "numReplicas": 1
