@@ -25,9 +25,7 @@ Hosting Apache Guacamole involves running the Guacamole web application alongsid
 - Apache Guacamole Docker image  
   https://hub.docker.com/r/guacamole/guacamole  
 - Apache Guacamole documentation  
-  https://guacamole.apache.org/doc/gug/  
-- Railway platform documentation  
-  https://docs.railway.com  
+  https://guacamole.apache.org/doc/gug/ 
 
 ### Implementation Details
 
