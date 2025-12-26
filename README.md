@@ -8,6 +8,18 @@ Apache Guacamole is a clientless remote desktop gateway that lets you access ser
 
 Hosting Apache Guacamole involves running the Guacamole web application alongside `guacd`, the proxy daemon responsible for handling remote desktop protocols, and a database for authentication and configuration storage. This template deploys Guacamole with PostgreSQL authentication, using Railway’s managed networking to securely connect services internally. Once deployed, you can manage users, connections, and permissions entirely through the Guacamole web interface, making it ideal for browser-based remote access without VPNs or client installations.
 
+By default, the Guacamole web interface is served under the `/guacamole` path. After deployment, you can access the UI at:
+</br>`https://<your-railway-domain>/guacamole`
+
+If you see a generic Tomcat page or a 404 at the root URL (`/`), this is expected behavior, Guacamole is not hosted at the root context by default.
+
+After the first deployment, Guacamole automatically creates a default administrative account.
+
+- **Username:** `guacadmin`  
+- **Password:** `guacadmin`  
+
+For security reasons, you should change this password immediately after logging in. To do so, open the **user menu (top-right corner)**, choose **Settings → Preferences**, and update the password using the **Change Password** section. The password cannot be changed from the general user-edit screen and must be updated via the dedicated password menu.
+
 ## Common Use Cases
 
 - Browser-based access to remote servers via SSH, RDP, or VNC  
